@@ -48,11 +48,10 @@ const currentYear = new Date().getFullYear();
 						<span>Profit Governance</span>
 					</h1>
 
-<p>
+<p class="hero-description">
   Il primo sistema di Profit Management <strong>BREVETTATO</strong>.<br>
-  Un modello evoluto che integra prezzi, costi, marginalità e<br>
-  risultati economici per guidare la struttura ricettiva verso un<br>
-  profitto più consapevole e sostenibile.
+  Un modello evoluto che integra prezzi, costi, marginalità e risultati economici
+  per guidare la struttura ricettiva verso un profitto più consapevole e sostenibile.
 </p>
 
 					<div class="hero-actions">
@@ -654,13 +653,14 @@ status.textContent =
 		color: #007e94;
 	}
 
-	.hero-description {
-		max-width: 710px;
-		margin-bottom: 34px;
-		color: #52616c;
-		font-size: clamp(18px, 2vw, 22px);
-		line-height: 1.65;
-	}
+.hero-description {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 34px;
+    color: #52616c;
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.65;
+}
 
 	.hero-actions {
 		display: flex;
