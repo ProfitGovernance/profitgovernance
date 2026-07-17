@@ -32,7 +32,7 @@ const currentYear = new Date().getFullYear();
 
 			<a
   class="button button-small"
-  href="mailto:quoprofit@gmail.com?subject=Richiesta%20Demo%20Profit%20Governance"
+  href="#richiesta-demo"
 >
   Richiedi una demo
 </a>
@@ -57,7 +57,7 @@ const currentYear = new Date().getFullYear();
 					<div class="hero-actions">
 						<a
   class="button"
-  href="mailto:quoprofit@gmail.com?subject=Richiesta%20Demo%20Profit%20Governance"
+  href="#richiesta-demo"
 >
   Richiedi una demo
 </a>
@@ -191,16 +191,236 @@ const currentYear = new Date().getFullYear();
 				</div>
 			</section>
 
+			<section class="demo-section" id="richiesta-demo">
+				<div class="demo-intro">
+					<p class="eyebrow">Richiedi una demo</p>
+					<h2>Parliamo della tua struttura.</h2>
+					<p>
+						Compila il modulo: riceveremo i dati necessari per preparare una
+						demo mirata sulle esigenze della tua attività.
+					</p>
+				</div>
+
+				<div class="demo-layout">
+					<form
+						id="demo-form"
+						class="demo-form"
+						action="https://formspree.io/f/meeyazad"
+						method="POST"
+					>
+						<input
+							type="hidden"
+							name="_subject"
+							value="Nuova richiesta demo dal sito Profit Governance"
+						/>
+
+						<div class="form-grid">
+							<label>
+								<span>Tipo struttura *</span>
+								<select name="Tipo struttura" required>
+									<option value="">Seleziona</option>
+									<option>Hotel</option>
+									<option>Resort</option>
+									<option>Residence</option>
+									<option>Villaggio Turistico</option>
+									<option>Campeggio</option>
+									<option>Glamping</option>
+									<option>Agriturismo</option>
+									<option>B&B</option>
+									<option>Affittacamere</option>
+									<option>Casa Vacanze</option>
+									<option>Appartamenti Turistici</option>
+									<option>Ostello</option>
+									<option>Altro</option>
+								</select>
+							</label>
+
+							<label>
+								<span>Nome struttura *</span>
+								<input type="text" name="Nome struttura" required />
+							</label>
+
+							<label>
+								<span>Località *</span>
+								<input type="text" name="Località" required />
+							</label>
+
+							<label>
+								<span>Numero totale unità abitative *</span>
+								<input
+									type="number"
+									name="Numero totale unità abitative"
+									min="1"
+									required
+								/>
+							</label>
+
+							<label>
+								<span>Nome referente *</span>
+								<input type="text" name="Nome referente" required />
+							</label>
+
+							<label>
+								<span>Telefono *</span>
+								<input type="tel" name="Telefono" required />
+							</label>
+
+							<label>
+								<span>Email *</span>
+								<input type="email" name="Email" required />
+							</label>
+
+							<label>
+								<span>PMS utilizzato *</span>
+								<select name="PMS utilizzato" required>
+									<option value="">Seleziona</option>
+									<option>Passepartout</option>
+									<option>Ericsoft</option>
+									<option>Scrigno</option>
+									<option>Scidoo</option>
+									<option>QuoVai</option>
+									<option>5 Stelle</option>
+									<option>Protel</option>
+									<option>Leonardo</option>
+									<option>Oracle OPERA</option>
+									<option>Mews</option>
+									<option>Cloudbeds</option>
+									<option>RoomRaccoon</option>
+									<option>Hotel in Cloud</option>
+									<option>Nessun PMS</option>
+									<option>Altro</option>
+								</select>
+							</label>
+
+							<label>
+								<span>Channel Manager utilizzato *</span>
+								<select name="Channel Manager utilizzato" required>
+									<option value="">Seleziona</option>
+									<option>Simple Booking</option>
+									<option>Vertical Booking</option>
+									<option>SiteMinder</option>
+									<option>Octorate</option>
+									<option>WuBook</option>
+									<option>D-EDGE</option>
+									<option>Hotel Spider</option>
+									<option>Cubilis</option>
+									<option>RateGain</option>
+									<option>Bookassist</option>
+									<option>QuoVai</option>
+									<option>Nessun Channel Manager</option>
+									<option>Altro</option>
+								</select>
+							</label>
+
+							<label>
+								<span>Ti interessa il Controllo di Gestione? *</span>
+								<select name="Interesse Controllo di Gestione" required>
+									<option value="">Seleziona</option>
+									<option>Sì</option>
+									<option>No</option>
+									<option>Vorrei saperne di più</option>
+								</select>
+							</label>
+
+							<label>
+								<span>Come ci hai conosciuto? *</span>
+								<select id="conoscenza" name="Come ci hai conosciuto" required>
+									<option value="">Seleziona</option>
+									<option>Google</option>
+									<option>LinkedIn</option>
+									<option>Facebook</option>
+									<option>Instagram</option>
+									<option>Passaparola</option>
+									<option>Cliente QuoProfit</option>
+									<option>BNI</option>
+									<option>Aristide T.</option>
+									<option>Franco Z.</option>
+									<option>Fiera</option>
+									<option>Webinar</option>
+									<option>Associazione di categoria</option>
+									<option>Articolo o blog</option>
+									<option>YouTube</option>
+									<option>Altro</option>
+								</select>
+							</label>
+
+							<label id="capitolo-bni-field" class="conditional-field">
+								<span>Capitolo BNI</span>
+								<input type="text" name="Capitolo BNI" />
+							</label>
+
+							<label id="altro-conoscenza-field" class="conditional-field">
+								<span>Specifica come ci hai conosciuto</span>
+								<input type="text" name="Altro - Come ci hai conosciuto" />
+							</label>
+
+							<label class="form-full">
+								<span>Messaggio</span>
+								<textarea
+									name="Messaggio"
+									rows="5"
+									placeholder="Descrivi brevemente le tue esigenze o gli aspetti che vorresti approfondire."
+								></textarea>
+							</label>
+						</div>
+
+						<label class="privacy-row">
+							<input type="checkbox" name="Consenso privacy" value="Accettato" required />
+							<span>
+								Acconsento al trattamento dei dati forniti esclusivamente per
+								gestire la richiesta di contatto e demo. *
+							</span>
+						</label>
+
+						<button class="button demo-submit" type="submit">
+							Invia richiesta
+						</button>
+
+						<p id="form-status" class="form-status" aria-live="polite"></p>
+					</form>
+
+					<aside class="demo-side">
+						<p class="eyebrow eyebrow-light">Cosa succede dopo</p>
+						<h3>Una demo costruita sui tuoi dati e sulle tue priorità.</h3>
+
+						<div class="demo-step">
+							<span>01</span>
+							<p>Riceviamo e analizziamo le informazioni della struttura.</p>
+						</div>
+
+						<div class="demo-step">
+							<span>02</span>
+							<p>Scegli la data e l'orario disponibili nel calendario.</p>
+						</div>
+
+						<div class="demo-step">
+							<span>03</span>
+							<p>Approfondiamo insieme Revenue, costi e redditività.</p>
+						</div>
+
+						<div id="calendar-box" class="calendar-box" hidden>
+							<strong>Richiesta ricevuta correttamente.</strong>
+							<p>Ora puoi scegliere direttamente la data della demo.</p>
+							<a
+								class="button button-light"
+								href="https://calendar.app.google/215FfuoWEndYFCNT6"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Prenota la tua demo
+							</a>
+						</div>
+					</aside>
+				</div>
+			</section>
+
 			<section class="cta" id="contatti">
 				<div>
-					<p class="eyebrow eyebrow-light">Parliamo della tua struttura</p>
+					<p class="eyebrow eyebrow-light">Profit Governance</p>
 					<h2>Scopri come trasformare i dati in decisioni più redditizie.</h2>
 				</div>
 
-				<a
-					class="button button-light"
-					href="mailto:quoprofit@gmail.com?subject=Richiesta%20demo%20Profit%20Governance"
-				>
+				<a class="button button-light" href="#richiesta-demo">
 					Richiedi una demo
 				</a>
 			</section>
@@ -210,6 +430,74 @@ const currentYear = new Date().getFullYear();
 			<p>© {currentYear} Profit Governance. Tutti i diritti riservati.</p>
 			<p>Una soluzione per il governo della redditività.</p>
 		</footer>
+
+		<script is:inline>
+			const form = document.getElementById("demo-form");
+			const status = document.getElementById("form-status");
+			const calendarBox = document.getElementById("calendar-box");
+			const conoscenza = document.getElementById("conoscenza");
+			const bniField = document.getElementById("capitolo-bni-field");
+			const altroField = document.getElementById("altro-conoscenza-field");
+
+			function aggiornaCampiCondizionali() {
+				const value = conoscenza.value;
+
+				bniField.classList.toggle("is-visible", value === "BNI");
+				altroField.classList.toggle("is-visible", value === "Altro");
+
+				const bniInput = bniField.querySelector("input");
+				const altroInput = altroField.querySelector("input");
+
+				bniInput.required = value === "BNI";
+				altroInput.required = value === "Altro";
+
+				if (value !== "BNI") bniInput.value = "";
+				if (value !== "Altro") altroInput.value = "";
+			}
+
+			conoscenza.addEventListener("change", aggiornaCampiCondizionali);
+
+			form.addEventListener("submit", async (event) => {
+				event.preventDefault();
+
+				const button = form.querySelector('button[type="submit"]');
+				const originalText = button.textContent;
+
+				button.disabled = true;
+				button.textContent = "Invio in corso…";
+				status.textContent = "";
+				status.className = "form-status";
+
+				try {
+					const response = await fetch(form.action, {
+						method: "POST",
+						body: new FormData(form),
+						headers: {
+							Accept: "application/json"
+						}
+					});
+
+					if (!response.ok) {
+						throw new Error("Invio non riuscito");
+					}
+
+					form.reset();
+					aggiornaCampiCondizionali();
+					status.textContent =
+						"Richiesta inviata correttamente. Ora scegli la data della demo.";
+					status.classList.add("success");
+					calendarBox.hidden = false;
+					calendarBox.scrollIntoView({ behavior: "smooth", block: "center" });
+				} catch (error) {
+					status.textContent =
+						"Non è stato possibile inviare la richiesta. Riprova tra poco.";
+					status.classList.add("error");
+				} finally {
+					button.disabled = false;
+					button.textContent = originalText;
+				}
+			});
+		</script>
 	</body>
 </html>
 
@@ -592,6 +880,217 @@ const currentYear = new Date().getFullYear();
 		background: #eef8fa;
 	}
 
+
+	.demo-section {
+		padding: 110px clamp(24px, 7vw, 120px);
+		background: #edf3f5;
+		scroll-margin-top: 90px;
+	}
+
+	.demo-intro {
+		max-width: 820px;
+		margin-bottom: 55px;
+	}
+
+	.demo-intro > p:last-child {
+		color: #60707b;
+		font-size: 18px;
+		line-height: 1.7;
+	}
+
+	.demo-layout {
+		display: grid;
+		grid-template-columns: minmax(0, 1.25fr) minmax(310px, 0.75fr);
+		gap: 28px;
+		align-items: start;
+	}
+
+	.demo-form {
+		padding: clamp(25px, 4vw, 44px);
+		border: 1px solid #d5e0e5;
+		border-radius: 28px;
+		background: white;
+	}
+
+	.form-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 22px;
+	}
+
+	.demo-form label {
+		display: block;
+	}
+
+	.demo-form label > span {
+		display: block;
+		margin-bottom: 9px;
+		color: #33434d;
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	.demo-form input,
+	.demo-form select,
+	.demo-form textarea {
+		width: 100%;
+		border: 1px solid #cbd7dd;
+		border-radius: 13px;
+		background: #fbfcfd;
+		color: #17222c;
+		font: inherit;
+		outline: none;
+		transition:
+			border-color 0.2s ease,
+			box-shadow 0.2s ease;
+	}
+
+	.demo-form input,
+	.demo-form select {
+		min-height: 50px;
+		padding: 0 14px;
+	}
+
+	.demo-form textarea {
+		padding: 14px;
+		resize: vertical;
+	}
+
+	.demo-form input:focus,
+	.demo-form select:focus,
+	.demo-form textarea:focus {
+		border-color: #007e94;
+		box-shadow: 0 0 0 4px rgba(0, 126, 148, 0.11);
+	}
+
+	.form-full {
+		grid-column: 1 / -1;
+	}
+
+	.conditional-field {
+		display: none !important;
+	}
+
+	.conditional-field.is-visible {
+		display: block !important;
+	}
+
+	.privacy-row {
+		display: flex !important;
+		gap: 12px;
+		align-items: flex-start;
+		margin: 26px 0 22px;
+		color: #5c6b75;
+		font-size: 14px;
+		line-height: 1.55;
+	}
+
+	.privacy-row input {
+		flex: 0 0 auto;
+		width: 18px;
+		height: 18px;
+		min-height: auto;
+		margin-top: 2px;
+		accent-color: #007e94;
+	}
+
+	.privacy-row span {
+		margin: 0 !important;
+		font-weight: 500 !important;
+	}
+
+	.demo-submit {
+		border: 0;
+		cursor: pointer;
+		font: inherit;
+	}
+
+	.demo-submit:disabled {
+		cursor: wait;
+		opacity: 0.65;
+		transform: none;
+	}
+
+	.form-status {
+		margin: 18px 0 0;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+
+	.form-status.success {
+		color: #08704f;
+	}
+
+	.form-status.error {
+		color: #a63b32;
+	}
+
+	.demo-side {
+		position: sticky;
+		top: 110px;
+		padding: clamp(28px, 4vw, 42px);
+		border-radius: 28px;
+		background: #122530;
+		color: white;
+	}
+
+	.demo-side h3 {
+		margin-bottom: 34px;
+		font-size: clamp(27px, 3vw, 38px);
+		line-height: 1.15;
+		letter-spacing: -0.03em;
+	}
+
+	.demo-step {
+		display: grid;
+		grid-template-columns: 46px 1fr;
+		gap: 15px;
+		align-items: start;
+		padding: 20px 0;
+		border-top: 1px solid rgba(255, 255, 255, 0.12);
+	}
+
+	.demo-step span {
+		display: grid;
+		width: 42px;
+		height: 42px;
+		place-items: center;
+		border-radius: 12px;
+		background: rgba(110, 212, 228, 0.12);
+		color: #6ed4e4;
+		font-size: 13px;
+		font-weight: 800;
+	}
+
+	.demo-step p {
+		margin: 2px 0 0;
+		color: #c0cbd1;
+		line-height: 1.6;
+	}
+
+	.calendar-box {
+		margin-top: 28px;
+		padding: 22px;
+		border-radius: 18px;
+		background: rgba(255, 255, 255, 0.09);
+	}
+
+	.calendar-box strong {
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.calendar-box p {
+		color: #c0cbd1;
+		line-height: 1.55;
+	}
+
+	.calendar-box .button {
+		width: 100%;
+		margin-top: 8px;
+	}
+
 	footer {
 		display: flex;
 		justify-content: space-between;
@@ -613,8 +1112,13 @@ const currentYear = new Date().getFullYear();
 		}
 
 		.hero,
-		.split {
+		.split,
+		.demo-layout {
 			grid-template-columns: 1fr;
+		}
+
+		.demo-side {
+			position: static;
 		}
 
 		.hero {
@@ -642,8 +1146,17 @@ const currentYear = new Date().getFullYear();
 
 		.hero,
 		.section,
-		.cta {
+		.cta,
+		.demo-section {
 			padding: 70px 22px;
+		}
+
+		.form-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.form-full {
+			grid-column: auto;
 		}
 
 		h1 {
