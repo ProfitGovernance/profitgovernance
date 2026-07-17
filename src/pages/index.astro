@@ -484,10 +484,11 @@ const currentYear = new Date().getFullYear();
 					form.reset();
 					aggiornaCampiCondizionali();
 					status.textContent =
-						"Richiesta inviata correttamente. Ora scegli la data della demo.";
+						status.textContent =
+status.textContent =
+	"✅ Richiesta inviata correttamente! ➡️ Ora clicca sul pulsante 'Prenota la tua Demo' qui a destra per scegliere data e orario.";
 					status.classList.add("success");
-					calendarBox.hidden = false;
-					calendarBox.scrollIntoView({ behavior: "smooth", block: "center" });
+					calendarBox.hidden = false; 
 				} catch (error) {
 					status.textContent =
 						"Non è stato possibile inviare la richiesta. Riprova tra poco.";
